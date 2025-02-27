@@ -15,6 +15,8 @@
             background-color: #f4f4f4;
         }
         .container {
+            width: 500px;
+            height: 450px;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -24,12 +26,16 @@
         h2 {
             margin-bottom: 20px;
         }
-        input, select, button {
+        button {
+            margin-bottom: 25px;
+            margin-top: 25px;
             margin: 10px 0;
             padding: 10px;
-            width: 100%;
-            border: 1px solid #ccc;
+            width: 90%;
+            border: 1px solid #0b86f2;
             border-radius: 5px;
+            background-color: #6200ea;
+            color: #fff;
         }
         button {
             background-color: #6200ea;
@@ -40,9 +46,40 @@
             background-color: #3700b3;
         }
         #result {
-            margin-top: 15px;
+            margin-bottom: 25px;
+            margin-top: 25px;
+            margin-left: 25px;
             font-size: 1.2em;
             font-weight: bold;
+            background-color: #3700b3;
+            color: white;
+            width: 90%;
+            height: 50px;
+        }
+        #amount{
+            margin-bottom: 25px;
+            margin-top: 25px;
+            margin-left: -5px;
+            padding: 10px;
+            width: 85%;
+            border-radius: 5px;
+            background-color: #6200ea;
+            color: #fff;   
+        }
+        .dropdowns{
+            margin-bottom: 25px;
+            margin-top: 25px;
+            margin-left: 25px;
+            padding-left: 100px;
+            padding: 10px;
+            width: 85%;
+            border: 1px solid #0b86f2;
+            border-radius: 5px;
+            background-color: #6200ea;
+            color: #fff;
+        }
+        #from__currency{
+            margin-right: 100px;
         }
     </style>
 </head>
@@ -51,8 +88,8 @@
         <h2>Currency Converter</h2>
         <input type="number" id="amount" placeholder="Enter amount" value="1">
         <div class="dropdowns">
-            <select id="from-currency"></select>
-            <select id="to-currency"></select>
+            <select id="from__currency"></select>
+            <select id="to__currency"></select>
         </div>
         <button onclick="convertCurrency()">Convert</button>
         <p id="result"></p>
